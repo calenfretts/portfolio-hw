@@ -18,7 +18,27 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = [
+  'JavaScript'
+  , 'PHP'
+  , 'JavaScript frameworks'
+  , 'PHP frameworks'
+  , 'LAMP stack'
+  , 'CMS'
+  , 'Web services and APIs'
+  , 'HTML / HTML5 / CSS / CSS3'
+  , 'AJAX'
+  , 'Source control'
+  , 'Databases'
+  , 'E-commerce'
+  , 'Java, C++, C#, Python, Go, Perl, Bash'
+  , 'Web3: blockchain, Solidity, dApps, DeFi'
+  , 'Node.js, Express, Bootstrap, CoffeeScript, Liquid, Twig, SASS/LESS'
+  , 'MVC'
+  , 'Agile'
+  , 'Social media apps'
+  , 'Responsive dev'
+];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -68,9 +88,8 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Designer + Developer"
-        description="Design portfolio of Hamish Williams — a product designer working on web & mobile
-          apps with a focus on motion, experience design, and accessibility."
+        title="Full Stack Engineer"
+        description="Portfolio of Calen Fretts — a Full Stack Engineer."
       />
       <Intro
         id="intro"
