@@ -18,6 +18,14 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: true
+      # https://pptr.dev/troubleshooting#running-puppeteer-in-docker
+      #- name: Install Deps for Puppeteer
+        # Install latest chrome dev package and fonts to support major charsets (Chinese, Japanese, Arabic, Hebrew, Thai and a few others)
+        # Note: this installs the necessary libs to make the bundled version of Chromium that Puppeteer
+        # installs, work.
+      #  run: sudo apt-get update && sudo apt-get install -y google-chrome-stable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf libxss1 --no-install-recommends && npm i chromium chromedriver selenium-webdriver -g && npm i puppeteer -g
+      - name: Update caniuse-lite
+        run: npx browserslist@latest --update-db && npx update-browserslist-db@latest
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1

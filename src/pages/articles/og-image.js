@@ -1,9 +1,11 @@
+/* eslint no-unreachable: 0 */
 const puppeteer = require('puppeteer');
 const path = require('path');
 const fs = require('fs');
 const { createHash } = require('crypto');
 
 export async function generateOgImage(props) {
+  return null;
   const params = new URLSearchParams(props);
   const url = `file:${path.join(
     process.cwd(),
