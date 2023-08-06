@@ -77,7 +77,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                     data-status={status}
                     style={cssProps({ delay: tokens.base.durationXS })}
                   >
-                    Full Stack Engineer
+                    Full.Stack.Engineer
                   </span>
                   <span className={styles.line} data-status={status} />
                 </span>

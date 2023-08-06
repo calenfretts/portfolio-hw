@@ -128,7 +128,7 @@
 }
 
 .word {
-  font-size: smaller;
+  font-size: calc((48 / 16) * 1rem);
   position: relative;
   display: flex;
   align-items: center;
