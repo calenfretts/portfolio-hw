@@ -78,7 +78,7 @@
 }
 
 .tag {
-  margin-top: 220px;
+  margin-top: 0px;
   margin-bottom: 40px;
   display: grid;
   grid-template-columns: var(--space4XL) 1fr;
