@@ -19,6 +19,11 @@ export const navLinks = [
 
 export const socialLinks = [
   {
+    label: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/calenfretts/',
+    icon: 'link',
+  },
+  {
     label: 'Twitter',
     url: 'https://twitter.com/CalenFretts',
     icon: 'twitter',
@@ -27,10 +32,5 @@ export const socialLinks = [
     label: 'Github',
     url: 'https://github.com/calenfretts',
     icon: 'github',
-  },
-  {
-    label: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/calenfretts/',
-    icon: 'link',
   },
 ];
