@@ -3,10 +3,10 @@ export const navLinks = [
   //   label: 'Projects',
   //   pathname: '/#project-1',
   // },
-  // {
-  //   label: 'Details',
-  //   pathname: '/#details',
-  // },
+  {
+    label: 'About',
+    pathname: '/#details',
+  },
   // {
   //   label: 'Articles',
   //   pathname: '/articles',
@@ -19,9 +19,14 @@ export const navLinks = [
 
 export const socialLinks = [
   {
+    label: 'Linktree',
+    url: 'https://linktr.ee/calenfretts',
+    icon: 'link',
+  },
+  {
     label: 'LinkedIn',
     url: 'https://www.linkedin.com/in/calenfretts/',
-    icon: 'link',
+    icon: 'send',
   },
   {
     label: 'Twitter',
